@@ -11,6 +11,9 @@ class StackList:
     def pop(self):
         return self.stack.pop()
 
+    def peek(self):
+        return self.stack[-1]
+
     def __str__(self):
         return f"{self.stack}"
 
@@ -21,3 +24,4 @@ stack1.push(3)
 print(stack1)
 stack1.pop()
 print(stack1)
+print(stack1.peek())
